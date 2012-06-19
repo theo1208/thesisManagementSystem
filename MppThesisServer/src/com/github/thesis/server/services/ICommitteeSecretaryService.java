@@ -1,5 +1,10 @@
 package com.github.thesis.server.services;
 
-public interface ICommitteeSecretaryService {
+/**
+ * @author makranczitamas@gmail.com
+ *
+ */
+public interface ICommitteeSecretaryService extends IBaseService {
 
+	
 }
