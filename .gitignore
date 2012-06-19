@@ -1,0 +1,5 @@
+# ignore .metadata
+.metadata
+
+#ignore bin
+bin/

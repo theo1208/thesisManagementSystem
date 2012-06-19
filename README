@@ -1,0 +1,68 @@
+Proiectati si implementati un sistem soft care sa gestioneze inscrierea
+candidatilor la licenta si a rezultatelor obtinute de acestia.
+In prezent, aceastea se desfasoara astfel:
+
+1. Conducerea facultatii stabileste comisiile de licenta (numarul
+comisiilor si componenta lor). O comisie este formata dintr-un
+presedinte, doi membri si un(o) secretar(a) de comisie.
+
+2. In perioada inscrierilor la licenta, candidatul se inscrie la secretara
+specializarii lui. Secretara noteaza numele candidatului si coordonatorul
+stiintific al acestuia. Un candidat poate avea doi coordonatori
+stiintifici. O secretara poate sa gestioneze studenti de la mai multe
+specializari.
+
+3. Dupa terminarea inscrierilor, candidatii se impart intre comisii.
+Fiecare secretar de comisie face urmatoarele:
+        * genereaza cataloagele cu candidatii din comisia respectiva. In catalog
+apar numele candidatului, coordonatorul sau coordonatorii stiintifici.
+Acest catalog este folosit pentru planificarea sustinerilor si pentru
+afisarea rezultatelor obtinute de candidati.
+        * dupa terminarea sustinerilor, genereaza  cataloagele cu rezultatele
+obtinute de candidati pe specializari. Intr-o comisie pot sa fie
+candidati de la mai multe specializari (de exemplu: informatica +
+mate-info + mate-info germana). Se genereaza doua tipuri de cataloage:
+intr-unul apar notele obtinute de candidat (teorie + sustinere si media
+acestora), iar in cel de-al doilea apar titlul lucrarii, coordonatorul
+(ii) si media obtinuta de candidat. Aceste cataloage se transmit
+secretarei responsabile de specializarea corespunzatoare.
+
+4. Secretara fiecarei specializari centralizeaza datele obtinute de la
+secretarii de comisie si genereaza adeverintele de absolvire a fiecarui
+candidat.
+
+
+Sistemul dezvoltat trebuie sa permita urmatoarele:
+
+1. Unui membru din conducerea facultatii sa introduca comisiile de licenta
+si sa creeze conturi pentru fiecare secretar de comisie.
+
+2. Secretarelor de la fiecare specializare sa inscrie candidatii la
+licenta.Pentru a reduce timpul necesar inscrierii, secretara poate sa
+aleaga candidatii din lista studentilor din anul terminal al specializarii
+respective sau poate sa adauge un candidat nou (studenti care au terminat
+in anii anteriori dar nu au sustinut examenul de licenta, sau candidati de
+la alte universitati).
+   La terminarea inscrierilor secretara genereaza o situatie (un tabel) cu
+toti candidatii inscrisi la fiecare specializare si a coordonatorilor
+acestora.
+
+3. Fiecare secretar de comisie isi alege candidatii de la comisia
+respectiva din lista tuturor candidatilor inscrisi. Secretarul introduce
+pentru fiecare candidat din comisia respectiva titlul lucrarii de licenta.
+Dupa alegerea candidatilor, secretarul genereaza o situatie cu numele
+candidatilor si coordonatori. Aceasta situatie va fi folosita ulterior
+pentru programarea sustinerilor.
+ Dupa sustinerea unei lucrari, secretarul introduce notele acordate de
+presedinte, membrii si coordonatorul stiintific, iar sistemul calculeaza
+automat media obtinuta de candidat. Pentru a fi declarat admis, fiecare
+nota trebuie sa fie mai mare sau egala cu 5, iar media mai mare sau egala
+cu 6.
+  Daca un candidat nu se prezinta la sustinere, el va fi declarat absent.
+La incheierea sustinerilor, secretarul genereaza cataloagele pe
+specializari si un catalog cu mediile obtinute de candidatii din comisia
+respectiva.
+
+4. Secretara fiecarei specializari sa poata genera situatii cu rezultatele
+obtinute de candidatii inscrisi (in ordine alfabetica sau in ordine
+descrescatoare dupa media obtinuta).
