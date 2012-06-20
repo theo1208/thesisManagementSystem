@@ -10,6 +10,7 @@ public class Thesis {
 	private static final double MIN = 5.0;
 	private static final double AVERAGE_MIN = 6.0;
 	
+	private int id;
 	private final String title;
 	private double theoryMark;
 	private double dissertationMark;
@@ -22,8 +23,16 @@ public class Thesis {
 		this.title = title;
 		this.theoryMark = 0;
 		this.dissertationMark = 0;
-	}
+	}	
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	/**
 	 * Constructor
 	 * @param title

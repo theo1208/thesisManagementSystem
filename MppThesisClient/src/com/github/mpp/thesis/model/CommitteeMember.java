@@ -8,7 +8,6 @@ package com.github.mpp.thesis.model;
  */
 public class CommitteeMember extends User {
 	private final Committee refCommittee;
-	
 	/**
 	 * Constructor
 	 * @param fullName
@@ -20,6 +19,8 @@ public class CommitteeMember extends User {
 		super(fullName, username, password);
 		this.refCommittee = committee;
 	}
+	
+	
 
 	/**
 	 * @return committee to which this member belongs to

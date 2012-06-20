@@ -7,6 +7,7 @@ package com.github.thesis.model;
  */
 
 public class Student {
+	private int id;
 	private final String name;
 	private final String subjectArea;
 	private String year;
@@ -55,4 +56,11 @@ public class Student {
 		return year;
 	}
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 }

@@ -12,6 +12,7 @@ import java.util.List;
 public class Candidate extends Student {
 	private static final int NO_OF_COORDINATORS = 2;
 	
+	private int id;	
 	private List<Coordinator> coordinators;
 	private Thesis thesis;
 	
@@ -33,6 +34,16 @@ public class Candidate extends Student {
 	public List<Coordinator> getCoordinators() {
 		return coordinators;
 	}
+	
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 
 	/**
 	 * @return the thesis

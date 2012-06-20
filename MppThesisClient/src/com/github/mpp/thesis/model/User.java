@@ -7,6 +7,7 @@ package com.github.mpp.thesis.model;
  */
 
 public class User {
+	private int id;
 	private final String fullName;
 	private final String username;
 	private final String password;
@@ -42,5 +43,13 @@ public class User {
 	 */
 	public String getPassword() {
 		return password;
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 }

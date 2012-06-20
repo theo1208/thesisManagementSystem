@@ -7,6 +7,7 @@ package com.github.mpp.thesis.model;
  */
 
 public class Coordinator {
+	private int id;	
 	private final String name;
 	
 	/**
@@ -24,4 +25,11 @@ public class Coordinator {
 		return name;
 	}
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}	
 }

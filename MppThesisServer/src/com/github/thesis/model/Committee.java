@@ -1,5 +1,7 @@
 package com.github.thesis.model;
 
+import java.util.List;
+
 /**
  * Class that represents a committee in a Thesis Session
  * @author MAKRANCZI Tam�s
@@ -9,6 +11,8 @@ package com.github.thesis.model;
 public class Committee {
 	private final String name;
 	private Catalog catalog;
+	private int id;
+	private List<CommitteeMember> members;
 	
 	/**
 	 * Constructor
@@ -24,6 +28,14 @@ public class Committee {
 	 */
 	public String getName() {
 		return name;
+	}	
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public Catalog getCatalog() {
@@ -34,4 +46,11 @@ public class Committee {
 		this.catalog = catalog;
 	}
 	
+	public List<CommitteeMember> getMembers() {
+		return members;
+	}
+
+	public void setMembers(List<CommitteeMember> members) {
+		this.members = members;
+	}	
 }
